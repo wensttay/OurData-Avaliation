@@ -1,19 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.ifpb.simba.ourdata.avaliation.process;
+package br.ifpb.simba.ourdata.evaluation.process;
 
-import br.ifpb.simba.ourdata.dao.ckan.CkanDataSetBdDao;
-import br.ifpb.simba.ourdata.dao.ckan.CkanResourceBdDao;
 import br.ifpb.simba.ourdata.dao.entity.KeyTimeBdDao;
 import br.ifpb.simba.ourdata.entity.KeyTime;
 import br.ifpb.simba.ourdata.entity.utils.KeyTimeUtils;
 import br.ifpb.simba.ourdata.reader.KeyTimeBo;
 import de.unihd.dbs.heideltime.standalone.exceptions.DocumentCreationTimeMissingException;
-import eu.trentorise.opendata.jackan.model.CkanDataset;
-import eu.trentorise.opendata.jackan.model.CkanResource;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -27,7 +18,9 @@ import org.jdom.JDOMException;
 
 /**
  *
- * @author wensttay
+ * @version 1.0
+ * @author Wensttay de Sousa Alencar <yattsnew@gmail.com>
+ * @date 07/01/2017 - 12:01:31
  */
 public class TimeProcess {
 

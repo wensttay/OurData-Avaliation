@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.ifpb.simba.ourdata.avaliation.autoprocess;
+package br.ifpb.simba.ourdata.evaluation.autoprocess;
 
-import br.ifpb.simba.ourdata.avaliation.process.PlaceProcess;
-import br.ifpb.simba.ourdata.avaliation.process.TimeProcess;
+import br.ifpb.simba.ourdata.evaluation.process.PlaceProcess;
+import br.ifpb.simba.ourdata.evaluation.process.TimeProcess;
 import br.ifpb.simba.ourdata.reader.CSVReaderOD;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +13,9 @@ import java.util.List;
 
 /**
  *
- * @author wensttay
+ * @version 1.0
+ * @author Wensttay de Sousa Alencar <yattsnew@gmail.com>
+ * @date 07/01/2017 - 12:01:31
  */
 public class CsvPopulator {
 
@@ -96,7 +93,6 @@ public class CsvPopulator {
 //                    errorList.add(resourceUrl);
 //                }
 //            }
-
             System.out.println("RESOURCES WITH PROBLEM: ");
             for (String rId : errorList) {
                 System.out.println(rId);

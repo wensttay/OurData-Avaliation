@@ -1,22 +1,15 @@
-package br.ifpb.simba.ourdata.avaliation.views;
+package br.ifpb.simba.ourdata.evaluation.views;
 
-import br.ifpb.simba.ourdata.avaliation.process.PlaceProcess;
-import br.ifpb.simba.ourdata.avaliation.process.TimeProcess;
+import br.ifpb.simba.ourdata.evaluation.process.PlaceProcess;
+import br.ifpb.simba.ourdata.evaluation.process.TimeProcess;
 import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
- * @author wensttay
+ * @version 1.0
+ * @author Wensttay de Sousa Alencar <yattsnew@gmail.com>
+ * @date 07/01/2017 - 12:01:31
  */
 public class View extends javax.swing.JFrame {
 

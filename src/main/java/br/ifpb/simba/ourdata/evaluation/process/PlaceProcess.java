@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.ifpb.simba.ourdata.avaliation.process;
+package br.ifpb.simba.ourdata.evaluation.process;
 
-import br.ifpb.simba.ourdata.avaliation.database.PlaceAvaliationDao;
+import br.ifpb.simba.ourdata.evaluation.database.PlaceAvaliationDao;
 import br.ifpb.simba.ourdata.entity.KeyPlace;
 import br.ifpb.simba.ourdata.entity.utils.KeyPlaceUtils;
 import br.ifpb.simba.ourdata.reader.CSVReaderOD;
@@ -16,21 +11,19 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
- * @author wensttay
+ * @version 1.0
+ * @author Wensttay de Sousa Alencar <yattsnew@gmail.com>
+ * @date 07/01/2017 - 12:01:31
  */
 public class PlaceProcess {
 
-    public boolean process(String local, int colum, String type, String resourceId, boolean isFile){
+    public boolean process(String local, int colum, String type, String resourceId, boolean isFile) {
 
         KeyPlaceBo keyPlacesBo = new KeyPlaceBo(KeyPlaceBo.NUM_ROWS_CHECK_DEFAULT);
 
@@ -39,7 +32,7 @@ public class PlaceProcess {
 
         CSVReaderOD cSVReaderOD = new CSVReaderOD();
         InputStream in = null;
-        
+
         if (isFile) {
             System.out.println("Processando CSV via arquivo");
             try {
@@ -55,7 +48,7 @@ public class PlaceProcess {
                 stackURL.openConnection().setReadTimeout(120000);
                 in = stackURL.openStream();
             } catch (IOException ex) {
-                in  = null;
+                in = null;
                 System.out.println("ERROR: Erro ao tentar se conectar à URL");
                 return false;
             }
@@ -82,7 +75,7 @@ public class PlaceProcess {
             System.out.println(TextColor.ANSI_RED.getCode() + " " + ex.getMessage());
             return false;
         }
-        
+
         return true;
     }
 }

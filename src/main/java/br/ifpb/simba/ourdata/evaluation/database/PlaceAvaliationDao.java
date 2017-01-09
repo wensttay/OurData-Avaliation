@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.ifpb.simba.ourdata.avaliation.database;
+package br.ifpb.simba.ourdata.evaluation.database;
 
 import br.ifpb.simba.ourdata.dao.GenericBdDao;
 import br.ifpb.simba.ourdata.entity.KeyPlace;
@@ -16,7 +11,9 @@ import java.util.List;
 
 /**
  *
- * @author wensttay
+ * @version 1.0
+ * @author Wensttay de Sousa Alencar <yattsnew@gmail.com>
+ * @date 07/01/2017 - 12:01:31
  */
 public class PlaceAvaliationDao extends GenericBdDao {
 
@@ -46,7 +43,7 @@ public class PlaceAvaliationDao extends GenericBdDao {
     private boolean insert(KeyPlace keyPlace) {
         PreparedStatement ps = null;
         boolean result;
-        
+
         try {
             StringBuilder sql = new StringBuilder("INSERT INTO resource_place_avaliation(COLUM_NUMBER, COLUM_VALUE,");
             sql.append("REPEAT_NUMBER, ROWS_NUMBER, METADATA_CREATED, WAY, minX, minY, maxX, maxY, ID_PLACE, ID_RESOURCE)");

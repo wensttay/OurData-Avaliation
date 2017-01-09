@@ -1,2 +1,2 @@
 # OurData-Avaliation
-Um projeto feito para avaliar o quão eficaz o projeto OurData se encontra em seus resultados. 
+Ferramenta desenvolvida para testar a eficiência dos resultados obtidos no projeto "OurData".

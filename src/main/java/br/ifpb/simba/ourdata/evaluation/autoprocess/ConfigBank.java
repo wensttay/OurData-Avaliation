@@ -18,7 +18,7 @@ public class ConfigBank {
         List<KeyPlace> allOnAvaliation = bdDao.getAllOnAvaliation();
         PlaceAvaliationDao avaliationDao = new PlaceAvaliationDao();
 
-        avaliationDao.setProperties_path("/banco/bancoAvaliation.properties");
+        avaliationDao.setProperties_path("/banco/bancoEvaluation.properties");
         boolean insertAll = avaliationDao.insertAll(allOnAvaliation);
         System.out.println("Deu Certo? " + insertAll);
     }
